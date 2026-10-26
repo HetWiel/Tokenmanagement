@@ -34,6 +34,10 @@ _Avoid_: Read-only user, guest
 An ongoing service the Provider delivers to a Client under one contract, covering one or more Service Lines.
 _Avoid_: Engagement, contract
 
+**Demo Client**:
+A fictitious Client with synthetic AI Consumption, used to demonstrate Token Management and kept apart from real Clients.
+_Avoid_: Test client, sandbox
+
 **AI Consumption Management**:
 The Service Line that measures a Client's AI Consumption across AI Tools, estimates its cost and finds where it is wasted.
 _Avoid_: AI FinOps, AI SAM, tokenomics
@@ -79,10 +83,6 @@ _Avoid_: Orphan, unknown user
 **Cost Centre**:
 A Client-defined organizational unit to which Users and Workloads belong, used to split AI Consumption and cost.
 _Avoid_: Department, team, business unit
-
-**Pseudonymised Client**:
-A Client for which Users are shown only under stable pseudonyms, never by name.
-_Avoid_: Anonymised, masked
 
 ## Cost
 
