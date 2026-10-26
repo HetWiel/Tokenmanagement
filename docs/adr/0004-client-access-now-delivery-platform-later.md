@@ -1,3 +1,7 @@
+---
+status: accepted, sign-in mechanism amended by ADR 0008 (Entra External ID, email one-time passcode instead of magic link)
+---
+
 # Clients log in now; the Delivery Platform becomes their single interface later
 
 Clients log in to Token Management directly in v1, because they decide on their own Optimization Opportunities and should not have to wait for the integration. The end state is still that Clients see AI Consumption inside the Delivery Platform, the Provider's single interface for Clients, with Token Management turning into a Provider-facing tool and data source. To make that move cheap, Token Management adopts the Delivery Platform's tenancy and sign-in unchanged. It serves one Provider and many Clients, with Client isolation as the only boundary (Delivery Platform ADR 0001). Client users sign in through their own SSO, with a magic-link fallback (Delivery Platform ADR 0002). We rejected building Token Management as a separate long-term Client product, because it would give Clients a second Provider portal and undercut the Delivery Platform's purpose.
