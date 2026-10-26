@@ -20,6 +20,14 @@ _Avoid_: Account manager, service manager
 A Provider employee assigned to Clients who carries out the delivery work.
 _Avoid_: Analyst, engineer, resource
 
+**Client Approver**:
+A Client user who may decide on Optimization Opportunities on the Client's behalf.
+_Avoid_: Client admin, sponsor
+
+**Client Viewer**:
+A Client user with read-only access to their Client's AI Consumption.
+_Avoid_: Read-only user, guest
+
 ## Service
 
 **Managed Service**:
@@ -64,6 +72,10 @@ _Avoid_: Employee, seat, account
 An application, integration or automation that consumes a Metered AI Tool, identified by the API Key, project or workspace it uses.
 _Avoid_: App, service, project
 
+**Unmatched Account**:
+An account in an AI Tool that cannot be linked to a User in the Client's directory, such as a personal email or a leaver's account.
+_Avoid_: Orphan, unknown user
+
 **Cost Centre**:
 A Client-defined organizational unit to which Users and Workloads belong, used to split AI Consumption and cost.
 _Avoid_: Department, team, business unit
@@ -95,3 +107,11 @@ _Avoid_: Unused licence, shelfware
 **Duplicate Tools**:
 An Optimization Opportunity where one User holds seats in several Seat-licensed AI Tools that serve the same purpose.
 _Avoid_: Overlap, redundant licences
+
+**Dismissal**:
+A recorded decision, with a reason, not to act on an Optimization Opportunity; it holds while the situation stays the same.
+_Avoid_: Ignore, won't fix, exemption
+
+**Realised Saving**:
+The saving from an actioned Optimization Opportunity, once later AI Consumption data confirms it.
+_Avoid_: Saving (bare), benefit, cost avoidance
