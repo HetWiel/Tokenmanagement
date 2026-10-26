@@ -37,7 +37,15 @@ Measure each Client's AI Consumption across Metered and Seat-licensed AI Tools f
 - Idle Seat by default means no AI Consumption in 30 days, excluding seats assigned in that period. The period and threshold are configurable per Client.
 - Lifecycle: Open, Proposed, then Actioned or Dismissed (with a reason), then Realised once later data confirms the saving. A Dismissal holds while the situation stays the same.
 
+### Views
+- The Client landing page shows Estimated Cost per month with its trend, split by AI Tool and Cost Centre. It also shows active against idle seats per AI Tool, Optimization Opportunities awaiting a decision, and Realised Savings this year.
+- A cross-client view for Provider staff shows failed connectors, open Unmatched Accounts and Optimization Opportunities still Open.
+
 ### Cross-cutting
+- Email notifications for: Optimization Opportunity Proposed (to Client Approvers), and connector failure, expired credentials or a new Unmatched Account (to the Consultant). Users can switch to a weekly digest.
+- An append-only audit trail of every Client decision (Actioned, Dismissal), every Rate Card change and every Unmatched Account resolution.
+- When a Managed Service ends, the Client keeps read-only access for 90 days. Connector access is revoked and API keys are deleted from Key Vault straight away. Data is then kept for 7 years. *These periods are still to be checked against the Client contracts.*
+- English UI built for translation from day one. PQR branding, as in the Delivery Platform.
 - TypeScript (Next.js and Postgres) on Azure West Europe, the same stack as the Delivery Platform (ADR 0001).
 
 ## Later
