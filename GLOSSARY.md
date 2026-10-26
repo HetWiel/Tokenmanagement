@@ -20,6 +20,16 @@ _Avoid_: Account manager, service manager
 A Provider employee assigned to Clients who carries out the delivery work.
 _Avoid_: Analyst, engineer, resource
 
+## Service
+
+**Managed Service**:
+An ongoing service the Provider delivers to a Client under one contract, covering one or more Service Lines.
+_Avoid_: Engagement, contract
+
+**AI Consumption Management**:
+The Service Line that measures a Client's AI Consumption across AI Tools, estimates its cost and finds where it is wasted.
+_Avoid_: AI FinOps, AI SAM, tokenomics
+
 ## Consumption
 
 **AI Tool**:
@@ -45,3 +55,43 @@ _Avoid_: Subscription, per-user, licensed
 **API Key**:
 A credential that grants access to a Metered AI Tool; never called a token.
 _Avoid_: Token, access token, secret
+
+**User**:
+A Client person to whom AI Consumption is attributed, typically holding a seat in a Seat-licensed AI Tool.
+_Avoid_: Employee, seat, account
+
+**Workload**:
+An application, integration or automation that consumes a Metered AI Tool, identified by the API Key, project or workspace it uses.
+_Avoid_: App, service, project
+
+**Cost Centre**:
+A Client-defined organizational unit to which Users and Workloads belong, used to split AI Consumption and cost.
+_Avoid_: Department, team, business unit
+
+**Pseudonymised Client**:
+A Client for which Users are shown only under stable pseudonyms, never by name.
+_Avoid_: Anonymised, masked
+
+## Cost
+
+**Rate Card**:
+The Provider-maintained price per AI Token for each model and token type, with Client-specific discounts applied.
+_Avoid_: Price list, pricing table
+
+**Estimated Cost**:
+The cost of AI Consumption calculated from a Rate Card or from seat prices, as opposed to what a Publisher actually invoices.
+_Avoid_: Spend, actual cost, bill
+
+## Optimization
+
+**Optimization Opportunity**:
+A detected case where a Client could spend less on AI Tools without losing value; distinct from an Exception.
+_Avoid_: Finding, waste, Exception, recommendation
+
+**Idle Seat**:
+An Optimization Opportunity where a User holds a seat in a Seat-licensed AI Tool but shows little or no AI Consumption over a period.
+_Avoid_: Unused licence, shelfware
+
+**Duplicate Tools**:
+An Optimization Opportunity where one User holds seats in several Seat-licensed AI Tools that serve the same purpose.
+_Avoid_: Overlap, redundant licences

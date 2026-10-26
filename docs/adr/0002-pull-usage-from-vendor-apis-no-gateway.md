@@ -1,0 +1,3 @@
+# Pull usage from vendor APIs; never sit in the AI traffic path
+
+Token Management gets AI Consumption by pulling usage and activity data from each AI Tool's admin or usage API, using read-only credentials the Client grants, with manual file upload for tools that have no API. We rejected an AI gateway or proxy, even though it would give exact per-call data and cover every tool uniformly. It would put the Provider on the critical path of the Client's AI traffic and make us responsible for its uptime and its prompt content. The cost is coarser data, limited to what each vendor exposes. Running collection inside the Client's Azure through the ITAM Agent stays an option for Clients that will not hand over credentials.

@@ -1,0 +1,3 @@
+# Store daily aggregates only, never content; Users can be pseudonymised per Client
+
+Token Management stores AI Consumption as daily aggregates per User or Workload, per AI Tool and per model. It never stores prompt or response content, and keeps no per-call records. Per-Client, Users can be pseudonymised under stable pseudonyms, so a Client whose works council objects to named monitoring of employees still gets Idle Seat and Duplicate Tools analysis. We chose this over per-call records (more analysis possible, but a GDPR and works-council liability we cannot justify) and over team-level only (which would make seat optimization impossible). Collecting finer data later would mean renegotiating with every Client, so this is hard to reverse.
